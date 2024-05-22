@@ -1,0 +1,12 @@
+[Unit]
+Description=Spigot Minecraft Server
+ 
+[Service]
+WorkingDirectory=/home/raspberry/
+ExecStart=java -Xms8000M -Xmx8000M -XX:+UseG1GC -jar spigot-1.20.4.jar nogui -noconsole
+User=raspberry
+Type=simple
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target
