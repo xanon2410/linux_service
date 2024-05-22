@@ -1,6 +1,7 @@
 [Unit]
 Description=Spigot Minecraft Server
- 
+WantedBy=multi-user.target
+
 [Service]
 WorkingDirectory=/home/raspberry/
 ExecStart=java -Xms7850M -Xmx7850M -XX:+UseG1GC -jar spigot-1.20.4.jar nogui
