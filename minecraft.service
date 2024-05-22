@@ -1,6 +1,5 @@
 [Unit]
 Description=Spigot Minecraft Server
-WantedBy=multi-user.target
 
 [Service]
 WorkingDirectory=/home/raspberry/
@@ -14,4 +13,3 @@ StandardOutput=journal
 StandardError=journal
 
 [Install]
-WantedBy=multi-user.target
